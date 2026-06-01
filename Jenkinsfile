@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_FRONTEND = "${DOCKER_USERNAME}/qualibytes-frontend"
-        DOCKER_IMAGE_BACKEND  = "${DOCKER_USERNAME}/qualibytes-backend"
-        APP_SERVER_IP         = "${APP_SERVER_IP}"
-        DOCKER_CREDS          = credentials('dockerhub-credentials')
+        DOCKER_IMAGE_FRONTEND = "9836sagar9836/qualibytes-frontend"
+        DOCKER_IMAGE_BACKEND  = "9836sagar9836/qualibytes-backend"
+        APP_SERVER_IP         = "65.1.111.78"
+        DOCKER_CREDS          = credentials('DockerCred')
     }
 
     stages {
