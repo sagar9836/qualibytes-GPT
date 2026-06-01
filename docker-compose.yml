@@ -37,7 +37,7 @@ services:
 
   # ── 3. OLLAMA (LLM ENGINE) ───────────────────────────────
   ollama:
-    image: ollama/ollama:latest
+    image: alpine/ollama:latest
     container_name: qualibytes-ollama
     ports:
       - "11434:11434"      # Exposed for direct testing
